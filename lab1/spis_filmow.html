@@ -6,12 +6,17 @@
         <title>Spis Filmów</title>
         <link rel="stylesheet" href="main.css">
         <meta name="Author" content="Mateusz Miller" />
+        <script src="timedate.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onload="startClock()">
         <table class="backgroundColors">
             <tr>
                 <td colspan="2" class="header">
-                    <h1>Spis Filmów</h1>
+                    <h1>Spis filmów</h1>
+                    <div class="clock-container">
+                        <div id="data"></div>
+                        <div id="zegarek"></div>
+                    </div>
                 </td>
             </tr>
             <tr>

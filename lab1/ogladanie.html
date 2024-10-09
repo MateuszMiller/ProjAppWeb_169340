@@ -7,12 +7,17 @@
         <title>Gdzie obejrzeć filmy</title>
         <link rel="stylesheet" href="main.css">
         <meta name="Author" content="Mateusz Miller" />
+        <script src="timedate.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onload="startClock()">
         <table>
             <tr>
                 <td colspan="2" class="header">
-                    <h1>Gdzie obejrzeć Filmy</h1>
+                    <h1>Gdzie obejrzeć</h1>
+                    <div class="clock-container">
+                        <div id="data"></div>
+                        <div id="zegarek"></div>
+                    </div>
                 </td>
             </tr>
             <tr>

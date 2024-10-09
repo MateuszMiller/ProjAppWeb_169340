@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white; 
+    font-family: Arial, sans-serif; 
     background-size: cover; 
     background-attachment: fixed; 
     background-position: center; 
@@ -18,8 +17,19 @@ table {
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative;
+}
+.clock-container {
+    position: absolute;
+    top: 20px;   /* Odstęp od góry nagłówka */
+    right: 20px; /* Odstęp od prawej strony */
+    text-align: right;
+    color: white; /* Kolor tekstu zegara i daty */
 }
 
+#data, #zegarek {
+    font-size: 14px; /* Dostosuj rozmiar czcionki */
+}
 .menu {
     background-color: #f4f4f4;
     text-align: center;
