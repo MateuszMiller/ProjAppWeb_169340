@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ranking filmów</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <meta name="Author" content="Mateusz Miller" />
+        <script src="../js/timedate.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body onload="startClock()">
+        <table>
+            <tr>
+                <td colspan="2" class="header">
+                    <h1>Ranking</h1>
+                    <div class="clock-container">
+                        <div id="data"></div>
+                        <div id="zegarek"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="menu">
+                    <a href="../index.html"><b>Strona główna</b></a>
+                    <a href="o%20mnie.html"><b>O mnie</b></a>
+                    <a href="spis_filmow.html"><b>Spis filmów</b></a>
+                    <a href="kontakt.html"><b>Kontakt</b></a>
+                    <a href="ranking.html"><b>Mój ranking</b></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="animacjaTestowa2" class="test-block">
+                    Najedź kurosrem, a się powiększe
+                    </div>
+                    <script>
+                    
+                    $("#animacjaTestowa2").on({
+                        "mouseover" : function() {
+                            $(this).animate({
+                                width: 300
+                            }, 800);
+                        },
+                        "mouseout" : function() {
+                            $(this).animate({
+                                width: 200
+                            }, 800);
+                        }
+                    });
+                        
+                    </script>
+                </td>
+            </tr>
+        </table>
+        <footer class="footer">
+            <p>&copy; 2024 Filmy Oskarowe. Wszystkie prawa zastrzeżone.</p>
+        </footer>
+    </body>
+</html>
