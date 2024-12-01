@@ -1,3 +1,4 @@
+/* Domyślny styl (tryb jasny) */
 body {
     margin: 0;
     font-family: Arial, sans-serif; 
@@ -5,7 +6,10 @@ body {
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
+    background-color: white; /* Kolor tła dla trybu jasnego */
+    color: black; /* Kolor tekstu dla trybu jasnego */
 }
+
 table {    
     width: 100%;
     height: auto;
@@ -13,32 +17,55 @@ table {
 }
 
 .header {
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Ciemne tło nagłówka w trybie jasnym */
+    color: white; /* Kolor tekstu nagłówka w trybie jasnym */
     text-align: center;
     padding: 20px;
     position: relative;
 }
+
 .clock-container {
     position: absolute;
-    top: 20px;   /* Odstęp od góry nagłówka */
-    right: 20px; /* Odstęp od prawej strony */
+    top: 20px;
+    right: 20px;
     text-align: right;
-    color: white; /* Kolor tekstu zegara i daty */
+    color: white;
 }
 
 #data, #zegarek {
-    font-size: 14px; /* Dostosuj rozmiar czcionki */
+    font-size: 14px;
 }
+
+.darkmodebutton {
+    position: absolute;  /* Pozycjonowanie absolutne względem rodzica */
+    top: 60px;           /* Ustawienie przycisku poniżej zegara */
+    right: 20px;         /* Odstęp od prawej krawędzi */
+}
+
+.darkmodebutton button {
+    padding: 8px 16px;   /* Mniejsze wypełnienie przycisku */
+    font-size: 14px;     /* Mniejsza czcionka */
+    background-color: #333;  /* Ciemne tło przycisku */
+    color: white;        /* Kolor tekstu */
+    border: none;        /* Brak obramowania */
+    border-radius: 5px;  /* Zaokrąglone rogi */
+    cursor: pointer;     /* Zmiana kursora na wskaźnik */
+    transition: background-color 0.3s ease;  /* Płynne przejście przy najechaniu */
+}
+
+.darkmodebutton button:hover {
+    background-color: #555;  /* Jaśniejsze tło przycisku przy najechaniu */
+}
+
 .menu {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Jasne tło dla menu w trybie jasnym */
     text-align: center;
     padding: 10px;
 }
 
 .menu a {
     text-decoration: none;
-    color: #333;
+    color: #333; /* Ciemny kolor tekstu linków w trybie jasnym */
     padding: 10px 20px;
     margin: 0 10px;
     display: inline-block;
@@ -46,12 +73,12 @@ table {
 }
 
 .menu a:hover {
-    background-color: #ddd;
+    background-color: #ddd; /* Kolor tła linków na hover w trybie jasnym */
 }
 
 .content {
     padding: 20px;
-    background-color: #fff;
+    background-color: #fff; /* Jasne tło treści */
     height: 100%;
 }
 
@@ -87,11 +114,13 @@ h2 {
     color: #333;
     margin-top: 0;
 }
+
 h1 {
     text-align: center;
     color: white;
 }
-/* DLA KONTAKT*/
+
+/* DLA KONTAKT */
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -125,34 +154,21 @@ input:focus, textarea:focus {
     outline: none;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
 .message {
     text-align: center;
     margin-top: 20px;
     font-size: 1.2em;
     color: #333;
 }
-.under_form{
+
+.under_form {
     height: 50px;
 }
-.over_form{
+
+.over_form {
     height: 50px;
 }
+
 /* DLA SPIS FILMÓW */
 .film-table {
     width: 100%;
@@ -168,6 +184,7 @@ button:hover {
 .film-table th {
     background-color: #f4f4f4;
 }
+
 .film-table a {
     color: black; 
     text-decoration: none; 
@@ -176,6 +193,7 @@ button:hover {
     padding: 5px 8px; 
     border-radius: 5px; 
 }
+
 .film-table a:hover {
     background-color: #e8f0fe; 
     color: #0d47a1; 
@@ -185,6 +203,7 @@ button:hover {
 .film-table a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
+
 /* O MNIE */
 .about-us h2 {
     font-size: 28px;
@@ -213,6 +232,7 @@ button:hover {
 .about-us ul li strong {
     color: black;
 }
+
 /* RANKING */
 .ranking-section h2 {
     font-size: 28px;
@@ -260,5 +280,114 @@ button:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    
 }
+
+/* Ciemny tryb */
+body.dark-mode {
+    background-color: #2f2f2f; /* Ciemne tło dla całego ciała strony */
+    color: white; /* Jasny tekst w trybie ciemnym */
+}
+
+body.dark-mode .header {
+    background-color: #222; /* Ciemne tło nagłówka w trybie ciemnym */
+    color: white; /* Jasny tekst w nagłówku w trybie ciemnym */
+}
+
+body.dark-mode .clock-container {
+    color: white; /* Kolor zegara w trybie ciemnym */
+}
+
+body.dark-mode .menu {
+    background-color: #333; /* Ciemne tło menu w trybie ciemnym */
+}
+
+body.dark-mode .menu a {
+    color: white; /* Jasny kolor tekstu linków w trybie ciemnym */
+}
+
+body.dark-mode .menu a:hover {
+    background-color: #444; /* Ciemniejsze tło linków na hover w trybie ciemnym */
+}
+
+body.dark-mode .content {
+    background-color: #444; /* Ciemne tło treści w trybie ciemnym */
+}
+
+body.dark-mode .footer {
+    background-color: #222; /* Ciemne tło stopki w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .film {
+    background-color: #333; /* Ciemne tło filmów w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .film-table th {
+    background-color: #444; /* Ciemne tło nagłówków tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .film-table td {
+    background-color: #555; /* Ciemne tło komórek tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .ranking-section h2 {
+    color: white; /* Jasny tekst w sekcji rankingu w trybie ciemnym */
+}
+
+body.dark-mode .ranking-table {
+    background-color: #333; /* Ciemne tło tabeli rankingowej w trybie ciemnym */
+}
+
+body.dark-mode .ranking-table th {
+    background-color: #444; /* Ciemne tło nagłówków tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .ranking-table td {
+    background-color: #555; /* Ciemne tło komórek tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .test-block {
+    background: rgba(71, 236, 30, 0.7); /* Zielony background testu w ciemnym trybie */
+    color: black;
+}
+
+body.dark-mode .about-us h2,
+body.dark-mode .about-us p,
+body.dark-mode .about-us ul li {
+    color: white; /* Jasny tekst w sekcji O nas w trybie ciemnym */
+}
+
+body.dark-mode .footer {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode input, body.dark-mode textarea, body.dark-mode button {
+    background-color: #444; /* Ciemne tło dla formularzy w trybie ciemnym */
+    color: white; /* Jasny tekst */
+    border: 1px solid #555; /* Jaśniejsze obramowanie dla formularzy */
+}
+
+body.dark-mode input:focus, body.dark-mode textarea:focus {
+    border-color: #66afe9; /* Niebieskie obramowanie przy fokussie */
+}
+
+body.dark-mode button {
+    background-color: #4CAF50; /* Zielony kolor dla przycisków */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode button:hover {
+    background-color: #45a049; /* Zielony przycisk na hover */
+}
+
+body.dark-mode .message {
+    color: white;
+}
+
