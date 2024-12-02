@@ -1,0 +1,393 @@
+/* Domyślny styl (tryb jasny) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: white; /* Kolor tła dla trybu jasnego */
+    color: black; /* Kolor tekstu dla trybu jasnego */
+}
+
+table {    
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+.header {
+    background-color: #333; /* Ciemne tło nagłówka w trybie jasnym */
+    color: white; /* Kolor tekstu nagłówka w trybie jasnym */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.clock-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    color: white;
+}
+
+#data, #zegarek {
+    font-size: 14px;
+}
+
+.darkmodebutton {
+    position: absolute;  /* Pozycjonowanie absolutne względem rodzica */
+    top: 60px;           /* Ustawienie przycisku poniżej zegara */
+    right: 20px;         /* Odstęp od prawej krawędzi */
+}
+
+.darkmodebutton button {
+    padding: 8px 16px;   /* Mniejsze wypełnienie przycisku */
+    font-size: 14px;     /* Mniejsza czcionka */
+    background-color: #333;  /* Ciemne tło przycisku */
+    color: white;        /* Kolor tekstu */
+    border: none;        /* Brak obramowania */
+    border-radius: 5px;  /* Zaokrąglone rogi */
+    cursor: pointer;     /* Zmiana kursora na wskaźnik */
+    transition: background-color 0.3s ease;  /* Płynne przejście przy najechaniu */
+}
+
+.darkmodebutton button:hover {
+    background-color: #555;  /* Jaśniejsze tło przycisku przy najechaniu */
+}
+
+.menu {
+    background-color: #f4f4f4; /* Jasne tło dla menu w trybie jasnym */
+    text-align: center;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333; /* Ciemny kolor tekstu linków w trybie jasnym */
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #ddd; /* Kolor tła linków na hover w trybie jasnym */
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff; /* Jasne tło treści */
+    height: 100%;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.film {
+    margin: 20px 0; 
+    display: flex; 
+    align-items: flex-start; 
+    background-color: #fafafa; 
+    padding: 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.film-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.film-description {
+    flex: 1;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+/* DLA KONTAKT */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%; 
+    padding: 12px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s; 
+    overflow: hidden; 
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.under_form {
+    height: 50px;
+}
+
+.over_form {
+    height: 50px;
+}
+
+/* DLA SPIS FILMÓW */
+.film-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.film-table th, .film-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.film-table th {
+    background-color: #f4f4f4;
+}
+
+.film-table a {
+    color: black; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: background-color 0.3s, color 0.3s; 
+    padding: 5px 8px; 
+    border-radius: 5px; 
+}
+
+.film-table a:hover {
+    background-color: #e8f0fe; 
+    color: #0d47a1; 
+    text-decoration: underline; 
+}
+
+.film-table a {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* O MNIE */
+.about-us h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #283593;
+    padding-bottom: 5px;
+}
+
+.about-us p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.about-us ul li strong {
+    color: black;
+}
+
+/* RANKING */
+.ranking-section h2 {
+    font-size: 28px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ranking-table th, .ranking-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.ranking-table th {
+    background-color: #212121;
+    color: white;
+    font-weight: bold;
+}
+
+.ranking-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.test-block {
+    width: 200px;
+    border: 2px solid rgba(71,236,30, 1);
+    background: rgba(71,236,30, 0.7);
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Ciemny tryb */
+body.dark-mode {
+    background-color: #2f2f2f; /* Ciemne tło dla całego ciała strony */
+    color: white; /* Jasny tekst w trybie ciemnym */
+}
+
+body.dark-mode .header {
+    background-color: #222; /* Ciemne tło nagłówka w trybie ciemnym */
+    color: white; /* Jasny tekst w nagłówku w trybie ciemnym */
+}
+
+body.dark-mode .clock-container {
+    color: white; /* Kolor zegara w trybie ciemnym */
+}
+
+body.dark-mode .menu {
+    background-color: #333; /* Ciemne tło menu w trybie ciemnym */
+}
+
+body.dark-mode .menu a {
+    color: white; /* Jasny kolor tekstu linków w trybie ciemnym */
+}
+
+body.dark-mode .menu a:hover {
+    background-color: #444; /* Ciemniejsze tło linków na hover w trybie ciemnym */
+}
+
+body.dark-mode .content {
+    background-color: #444; /* Ciemne tło treści w trybie ciemnym */
+}
+
+body.dark-mode .footer {
+    background-color: #222; /* Ciemne tło stopki w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .film {
+    background-color: #333; /* Ciemne tło filmów w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .film-table th {
+    background-color: #444; /* Ciemne tło nagłówków tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .film-table td {
+    background-color: #555; /* Ciemne tło komórek tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .ranking-section h2 {
+    color: white; /* Jasny tekst w sekcji rankingu w trybie ciemnym */
+}
+
+body.dark-mode .ranking-table {
+    background-color: #333; /* Ciemne tło tabeli rankingowej w trybie ciemnym */
+}
+
+body.dark-mode .ranking-table th {
+    background-color: #444; /* Ciemne tło nagłówków tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .ranking-table td {
+    background-color: #555; /* Ciemne tło komórek tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .test-block {
+    background: rgba(71, 236, 30, 0.7); /* Zielony background testu w ciemnym trybie */
+    color: black;
+}
+
+body.dark-mode .about-us h2,
+body.dark-mode .about-us p,
+body.dark-mode .about-us ul li {
+    color: white; /* Jasny tekst w sekcji O nas w trybie ciemnym */
+}
+
+body.dark-mode .footer {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode input, body.dark-mode textarea, body.dark-mode button {
+    background-color: #444; /* Ciemne tło dla formularzy w trybie ciemnym */
+    color: white; /* Jasny tekst */
+    border: 1px solid #555; /* Jaśniejsze obramowanie dla formularzy */
+}
+
+body.dark-mode input:focus, body.dark-mode textarea:focus {
+    border-color: #66afe9; /* Niebieskie obramowanie przy fokussie */
+}
+
+body.dark-mode button {
+    background-color: #4CAF50; /* Zielony kolor dla przycisków */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode button:hover {
+    background-color: #45a049; /* Zielony przycisk na hover */
+}
+
+body.dark-mode .message {
+    color: white;
+}
+
