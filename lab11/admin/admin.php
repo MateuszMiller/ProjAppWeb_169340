@@ -26,8 +26,6 @@ function FormularzLogowania($error = '') {
     echo $wynik;
 }
 
-
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $inputLogin = $_POST['login_email'] ?? '';
     $inputPass = $_POST['login_pass'] ?? '';

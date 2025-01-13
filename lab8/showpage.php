@@ -1,5 +1,5 @@
 <?php
-
+#funcka pokazuje podstrone
 function PokazPodstrone($id)
 {
     global $link;
