@@ -1,0 +1,599 @@
+/* Domyślny styl (tryb jasny) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: white; /* Kolor tła dla trybu jasnego */
+    color: black; /* Kolor tekstu dla trybu jasnego */
+}
+
+table {    
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+.header {
+    background-color: #333; /* Ciemne tło nagłówka w trybie jasnym */
+    color: white; /* Kolor tekstu nagłówka w trybie jasnym */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.clock-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    color: white;
+}
+
+#data, #zegarek {
+    font-size: 14px;
+}
+
+.darkmodebutton {
+    position: absolute;  /* Pozycjonowanie absolutne względem rodzica */
+    top: 60px;           /* Ustawienie przycisku poniżej zegara */
+    right: 20px;         /* Odstęp od prawej krawędzi */
+}
+
+.menu {
+    background-color: #f4f4f4; /* Jasne tło dla menu w trybie jasnym */
+    text-align: center;
+    padding: 10px;
+}
+.zaloguj{
+    text-align: center;
+}
+.menu a {
+    text-decoration: none;
+    color: #333; /* Ciemny kolor tekstu linków w trybie jasnym */
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #ddd; /* Kolor tła linków na hover w trybie jasnym */
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff; /* Jasne tło treści */
+    height: 100%;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.film {
+    margin: 20px 0; 
+    display: flex; 
+    align-items: flex-start; 
+    background-color: #fafafa; 
+    padding: 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.film-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.film-description {
+    flex: 1;
+}
+
+h2 {
+    color: #000000;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+/* DLA KONTAKT */
+.container {
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    background-color: white !important;
+    padding: 30px !important;
+    border-radius: 8px !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+td.content > .container {
+    max-width: 1000px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%; 
+    padding: 12px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s; 
+    overflow: hidden; 
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+.message-container, .error-message {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.error-message {
+    background-color: #f8d7da; /* Light red background for errors */
+    color: #721c24; /* Dark red text for visibility */
+    border: 1px solid #f5c6cb; /* Border matching background */
+}
+
+.message-container {
+    background-color: #d4edda; /* Light green background for success */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb; /* Border matching background */
+}
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.under_form {
+    height: 50px;
+}
+
+.over_form {
+    height: 50px;
+}
+
+/* DLA SPIS FILMÓW */
+.film-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.film-table th, .film-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.film-table th {
+    background-color: #f4f4f4;
+}
+
+.film-table a {
+    color: black; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: background-color 0.3s, color 0.3s; 
+    padding: 5px 8px; 
+    border-radius: 5px; 
+}
+
+.film-table a:hover {
+    background-color: #e8f0fe; 
+    color: #0d47a1; 
+    text-decoration: underline; 
+}
+
+.film-table a {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.film {
+    margin: 20px 0; 
+    display: flex; 
+    align-items: flex-start; 
+    background-color: #fafafa; 
+    padding: 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.film-image {
+    width: 300px; /* Dopasowane do iframe */
+    margin-right: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* Zaokrąglone rogi dla obrazów/iframe */
+}
+
+.film-description {
+    flex: 1; /* Wypełnia pozostałe miejsce */
+    display: flex;
+    flex-direction: column; /* Układa zawartość pionowo */
+    justify-content: center; /* Centruje tekst */
+}
+/* O MNIE */
+.about-us h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #283593;
+    padding-bottom: 5px;
+}
+
+.about-us p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.about-us ul li strong {
+    color: black;
+}
+
+/* RANKING */
+.ranking-section h2 {
+    font-size: 28px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ranking-table th, .ranking-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.ranking-table th {
+    background-color: #212121;
+    color: white;
+    font-weight: bold;
+}
+
+.ranking-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.test-block {
+    width: 200px;
+    border: 2px solid rgba(71,236,30, 1);
+    background: rgba(71,236,30, 0.7);
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Ciemny tryb */
+body.dark-mode {
+    background-color: #2f2f2f; /* Ciemne tło dla całego ciała strony */
+    color: white; /* Jasny tekst w trybie ciemnym */
+}
+
+body.dark-mode .header {
+    background-color: #222; /* Ciemne tło nagłówka w trybie ciemnym */
+    color: white; /* Jasny tekst w nagłówku w trybie ciemnym */
+}
+
+body.dark-mode .clock-container {
+    color: white; /* Kolor zegara w trybie ciemnym */
+}
+
+body.dark-mode .menu {
+    background-color: #333; /* Ciemne tło menu w trybie ciemnym */
+}
+
+body.dark-mode .menu a {
+    color: white; /* Jasny kolor tekstu linków w trybie ciemnym */
+}
+
+body.dark-mode .menu a:hover {
+    background-color: #444; /* Ciemniejsze tło linków na hover w trybie ciemnym */
+}
+
+body.dark-mode .content {
+    background-color: #444; /* Ciemne tło treści w trybie ciemnym */
+}
+
+body.dark-mode .footer {
+    background-color: #222; /* Ciemne tło stopki w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .film {
+    background-color: #333; /* Ciemne tło filmów w trybie ciemnym */
+    color: white;
+}
+body.dark-mode .film-description h2{
+    color: white !important;
+}
+body.dark-mode .film-table th {
+    background-color: #444; /* Ciemne tło nagłówków tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .film-table td {
+    background-color: #555; /* Ciemne tło komórek tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .ranking-section h2 {
+    color: white; /* Jasny tekst w sekcji rankingu w trybie ciemnym */
+}
+
+body.dark-mode .ranking-table {
+    background-color: #333; /* Ciemne tło tabeli rankingowej w trybie ciemnym */
+}
+
+body.dark-mode .ranking-table th {
+    background-color: #444; /* Ciemne tło nagłówków tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .ranking-table td {
+    background-color: #555; /* Ciemne tło komórek tabeli w trybie ciemnym */
+    color: white;
+}
+
+body.dark-mode .test-block {
+    background: rgba(71, 236, 30, 0.7); /* Zielony background testu w ciemnym trybie */
+    color: black;
+}
+
+body.dark-mode .about-us h2,
+body.dark-mode .about-us p,
+body.dark-mode .about-us ul li {
+    color: white; /* Jasny tekst w sekcji O nas w trybie ciemnym */
+}
+body.dark-mode h2{
+    color: #fff !important;
+}
+/* Stylizacja formularza w trybie ciemnym */
+body.dark-mode .container {
+    background-color: #000 !important; /* Czarne tło formularza */
+    color: #fff !important;           /* Jasny tekst */
+    border: 1px solid #555;           /* Obramowanie */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Subtelne cieniowanie */
+}
+
+/* Pola formularza */
+body.dark-mode input, 
+body.dark-mode textarea{
+    background-color: #222; /* Ciemne tło pól formularza */
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Placeholdery */
+body.dark-mode input::placeholder, 
+body.dark-mode textarea::placeholder {
+    color: #bbb;
+}
+
+/* Stylizacja pól formularza w trybie ciemnym */
+body.dark-mode input, 
+body.dark-mode textarea {
+    background-color: #333 !important; /* Ciemniejsze tło */
+    color: #fff !important;           /* Jasny tekst */
+    border: 1px solid #666 !important; /* Ciemne obramowanie */
+}
+
+/* Placeholdery w trybie ciemnym */
+body.dark-mode input::placeholder, 
+body.dark-mode textarea::placeholder {
+    color: #bbb !important; /* Jasnoszary tekst placeholdera */
+}
+
+/* Label w trybie ciemnym */
+body.dark-mode label {
+    color: #fff !important; /* Jasny tekst etykiety w trybie ciemnym */
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode button {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode button:hover {
+    background-color: #555;
+}
+.koszyk-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.koszyk-table th,
+.koszyk-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.koszyk-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.product-image {
+    max-width: 100px;
+    height: auto;
+}
+
+.btn-remove {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-remove:hover {
+    background-color: #c82333;
+}
+
+.form-buy {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-buy {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-buy:hover {
+    background-color: #0056b3;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+}
+
+body.dark-mode .koszyk-table th {
+    background-color: #444; /* Ciemne tło dla nagłówka tabeli */
+    color: #fff; /* Jasny kolor tekstu */
+}
+
+body.dark-mode .koszyk-table td {
+    background-color: #333; /* Ciemne tło dla komórek tabeli */
+    color: #fff; /* Jasny kolor tekstu */
+    border: 1px solid #555; /* Ciemny kolor obramowania */
+}
+
+body.dark-mode .total-price {
+    color: #fff; /* Jasny kolor dla sumy */
+}
+
+body.dark-mode .btn-buy {
+    background-color: #007bff; /* Przycisk kupowania w trybie ciemnym */
+    color: #fff;
+}
+
+body.dark-mode .btn-remove {
+    background-color: #dc3545; /* Przycisk usuwania w trybie ciemnym */
+    color: #fff;
+}
+
+
+.zaloguj {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff; /* Niebieskie tło */
+    color: white; /* Biały tekst */
+    padding: 10px 15px; /* Wewnętrzny odstęp */
+    text-decoration: none; /* Brak podkreślenia */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    font-weight: bold; /* Wyróżnienie tekstu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtelny cień */
+    z-index: 1000; /* Warstwa nad innymi elementami */
+}
+
+.zaloguj:hover {
+    background-color: #0056b3; /* Ciemniejsze tło podczas najechania */
+}
+.alert {
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
